@@ -1,8 +1,8 @@
 {{ partial "header.html" . }}
 
-<h2 class="content-list-title">
+<h1 class="content-list-title">
     <a href="{{ .Permalink }}" class="linktopost">{{ .Title }}</a>
-</h2>
+</h1>
 
 <div class="content-list">
 {{ range .Data.Pages.GroupByDate "2006" }}
