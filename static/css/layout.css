@@ -289,6 +289,31 @@ th, td {
   text-decoration: underline;
 }
 
+.footer-menu {
+  text-align: center;
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  -webkit-flex-flow: row wrap;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+
+  margin-top: 0.5em;
+}
+
+.footer-menu a {
+  text-decoration: none;
+}
+
+.footer-menu-item {
+  margin: 0.2em;
+  font-size: 1.2em;
+}
+
+.footer-menu-item a:hover {
+  text-decoration: underline;
+}
+
 .content-list {
   font-size: 1.2em;
 }
@@ -451,6 +476,20 @@ th, td {
     flex-flow: row wrap;
 
     font-size: 0.75em;
+  }
+  
+  .footer-menu {
+    text-align: center;
+    -webkit-justify-content: center;
+    -webkit-flex-flow: row wrap;
+    justify-content: center;
+    flex-flow: row wrap;
+    
+    font-size: 0.75em;
+  }
+  
+  .footer-menu-item {
+    font-weight: bold;
   }
 }
 

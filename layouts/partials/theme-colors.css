@@ -44,6 +44,7 @@ th {
 .post .content h6{ color: {{ .Param "colors.main" }}; }
 .post .content a:hover { color: {{ .Param "colors.main" }}; }
 .social-link:hover { color: {{ .Param "colors.main" }}; }
+.footer-menu-item { color: {{ .Param "colors.main" }}; }
 .nav-item-title:hover { color: {{ .Param "colors.main" }}; }
 .tag a:hover { color: {{ .Param "colors.main" }}; }
 .copyright { color: {{ .Param "colors.copyright" }} }
