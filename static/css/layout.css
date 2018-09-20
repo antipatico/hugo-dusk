@@ -305,12 +305,12 @@ th, td {
   text-decoration: none;
 }
 
-.footer-menu-item {
+.footer-menu-list {
   margin: 0.2em;
   font-size: 1.2em;
 }
 
-.footer-menu-item a:hover {
+.footer-menu-list a:hover {
   text-decoration: underline;
 }
 
@@ -488,7 +488,7 @@ th, td {
     font-size: 0.75em;
   }
   
-  .footer-menu-item {
+  .footer-menu-list {
     font-weight: bold;
   }
 }

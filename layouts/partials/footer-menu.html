@@ -1,5 +1,7 @@
 <div class="footer-menu">
-  {{ range .Site.Menus.footer }}
-  <div class="footer-menu-item">[ <a href="{{.URL}}">{{ .Name }}</a> ]</div>
+<div class="footer-menu-list">[ 
+  {{ range $index, $value := .Site.Menus.footer }}
+    {{ if $index }}• {{ end }}<a href="{{$value.URL}}">{{ $value.Name }}</a> 
   {{ end }}
+ ]</div>
 </div>
