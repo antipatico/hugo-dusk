@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="{{ . | absURL }}" />
 {{- end }}
 
+{{ if .Site.Params.music }}
+<link rel="stylesheet" href="css/music-button.css" />
+{{ end }}
+
 <title>
 {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
 {{ if eq $url "/" }}

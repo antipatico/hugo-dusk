@@ -1,7 +1,8 @@
 <div class="footer-menu">
 <div class="footer-menu-list">[ 
+  {{ partial "music-button.html" . }}
   {{ range $index, $value := .Site.Menus.footer }}
-    {{ if $index }}• {{ end }}<a href="{{$value.URL}}">{{ $value.Name }}</a> 
+    • <a href="{{$value.URL}}">{{ $value.Name }}</a> 
   {{ end }}
  ]</div>
 </div>

@@ -13,5 +13,23 @@
 
 </div> <!-- main -->
 
+{{ if .Site.Params.music }}
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script type="text/javascript">
+      let musicButton = $('#music-button');
+
+			musicButton.click(function() {
+			  let music = $("#music")[0];
+			  if (music.paused == false) {
+			  	music.pause();
+			    musicButton.text("▶️");
+			  } else {
+			  	music.play();
+			    musicButton.text("⏸️");
+				}
+			});
+    </script>
+{{ end }}
+
 </body>
 </html>

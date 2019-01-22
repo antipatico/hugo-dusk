@@ -1,0 +1,8 @@
+{{with .Site.Params.music}}
+<span id="music-button" class="music-button" />▶️</span>
+
+<audio loop id="music" class="music">
+  <source src="{{.}}" type="audio/mpeg">
+        Your browser does not support the audio element.
+</audio> 
+{{end}}
