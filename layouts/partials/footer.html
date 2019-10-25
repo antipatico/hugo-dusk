@@ -12,23 +12,28 @@
   </footer>
 
 </div> <!-- main -->
-
 {{ if .Site.Params.music }}
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script type="text/javascript">
-      let musicButton = $('#music-button');
+  <script type="text/javascript">
 
-			musicButton.click(function() {
-			  let music = $("#music")[0];
-			  if (music.paused == false) {
-			  	music.pause();
-			    musicButton.text("▶️");
-			  } else {
-			  	music.play();
-			    musicButton.text("⏸️");
-				}
-			});
-    </script>
+    function toggleAudio() {
+      if (window.HTMLAudioElement) {
+        try {
+          let music = document.getElementById('music');
+          let musicButton = document.getElementById('music-button');
+          if(music.paused) {
+            music.play();
+            musicButton.textContent = "⏸️";
+          } else {
+            music.pause();
+            musicButton.textContent = "▶️";
+          }
+        } catch (e) {
+          if (window.console)
+            console.error("ERROR:" +e);
+        }
+      }
+  }
+  </script>
 {{ end }}
 
 </body>

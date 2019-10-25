@@ -1,5 +1,5 @@
 {{with .Site.Params.music}}
-<span id="music-button" class="music-button" />▶️</span>
+<span id="music-button" class="music-button" onclick="toggleAudio()" />▶️</span>
 
 <audio loop id="music" class="music">
   <source src="{{.}}" type="audio/mpeg">
