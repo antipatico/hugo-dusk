@@ -15,7 +15,7 @@
     </div> <!--siteTitle-->
 
     {{ $currentPage := . }}
-    {{ range .Site.Menus.main }}
+    {{ range where .Site.Menus.main ".Identifier" "in" .Site.Params.mainSections }}
     <a class="nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}"><div class="nav-item-title">{{ .Name }}</div></a>
     {{ end }}
 

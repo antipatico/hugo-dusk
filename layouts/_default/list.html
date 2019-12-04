@@ -6,7 +6,7 @@
 
 <div class="content-list">
 {{ range .Data.Pages.GroupByDate "2006" }}
-  {{ range .Pages }}
+  {{ range where .Pages ".Params.unlisted" "!=" "true" }}
   {{ .Render "li"}}
   {{ end }}
 {{ end }}
