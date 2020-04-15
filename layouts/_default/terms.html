@@ -10,7 +10,7 @@
 {{ range $key, $value := .Data.Terms.Alphabetical }}
 
   <div class="term">
-    <a href="{{ $value.Name | urlize }}">
+    <a href="/tags/{{ $value.Name | urlize }}">
       <div class="term-title">{{ $value.Name }} ({{ $value.WeightedPages.Count }})</div> 
     </a>
 
