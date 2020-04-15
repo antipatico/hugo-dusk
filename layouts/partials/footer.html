@@ -1,7 +1,13 @@
   <footer>
 
+
+  <div class="music-button">
+  {{ partial "music-button.html" . }}
+  </div>
+  <div class="footer-menu">
   {{ partial "footer-menu.html" . }}
   {{ partial "social-links-footer.html" . }}
+  </div>
 
   <div class="copyright"> {{ .Site.Copyright | safeHTML }} </div>
 

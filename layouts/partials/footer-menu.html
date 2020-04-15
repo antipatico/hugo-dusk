@@ -1,8 +1,3 @@
-<div class="footer-menu">
-<div class="footer-menu-list">[ 
-  {{ partial "music-button.html" . }}
-  {{ range $index, $value := .Site.Menus.footer }}
-    • <a href="{{$value.URL}}">{{ $value.Name }}</a> 
-  {{ end }}
- ]</div>
-</div>
+{{ range $index, $value := .Site.Menus.footer }}
+ <a href="{{$value.URL}}"><div class="social-link">{{ $value.Name }}</div></a> 
+{{ end }}

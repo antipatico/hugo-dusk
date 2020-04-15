@@ -2,6 +2,17 @@
   display:none;
 }
 
-.music-button {
+span.music-button {
   cursor: pointer;
+}
+
+div.music-button {
+  text-align: center;
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  -webkit-flex-flow: row wrap;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  font-size: 1.5em;
 }
